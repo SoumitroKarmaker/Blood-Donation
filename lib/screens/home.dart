@@ -1,6 +1,8 @@
+import 'package:blood_donation/screens/req_for_donation.dart';
 import 'package:flutter/material.dart';
 import 'package:nb_utils/nb_utils.dart';
 
+import 'call_a_donor.dart';
 import 'donors_list.dart';
 
 
@@ -21,7 +23,7 @@ class Home extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: (){
-                      print('Call a donor');
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => CallADonor()));
                     },
                     child: Container(
                       decoration: BoxDecoration(
@@ -63,7 +65,7 @@ class Home extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: (){
-                      print('Request for a donation');
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) => ReqForDonation()));
                     },
                     child: Container(
                       decoration: BoxDecoration(

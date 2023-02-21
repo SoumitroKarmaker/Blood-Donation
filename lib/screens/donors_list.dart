@@ -12,29 +12,202 @@ class DonorList extends StatelessWidget {
       ),
       body: Column(
         children: [
-          ListTile(
-            title: Text('Donor Name'),
-            subtitle: Row(
-              children: [
-                Expanded(
-                  child: ElevatedButton(
-                      onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.red,
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: Container(
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),
+                  color: Colors.white, boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: Offset(2, 5),
+                ),
+              ]),
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: ListTile(
+                  trailing: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.more_vert,
+                        size: 25,
                       ),
-                      child: Text('Call')),
+                    ],
+                  ),
+                  title: Text(
+                    'Donor Name',
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
+                  subtitle: Column(
+                    children: [
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Row(
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Blood Group',
+                                style: TextStyle(fontSize: 14),
+                              ),
+                              Text(
+                                'AB+',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                    color: Colors.red),
+                              )
+                            ],
+                          ),
+                          SizedBox(
+                            width: 30,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('Contact'),
+                              Text(
+                                '41561423454',
+                                style: TextStyle(
+                                    fontSize: 16, color: Colors.black),
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Address',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                ),
+                              ),
+                              Text(
+                                'Lorem Ipsum is simply dummy text',
+                                style: TextStyle(
+                                    fontSize: 16, color: Colors.black),
+                              ),
+                            ],
+                          )
+                        ],
+                      )
+                    ],
+                  ),
                 ),
-                SizedBox(
-                  width: 20,
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: Container(
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),
+                  color: Colors.white, boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: Offset(2, 5),
                 ),
-                Expanded(
-                  child: ElevatedButton(
-                      onPressed: () {},
-                      style:
-                          ElevatedButton.styleFrom(backgroundColor: Colors.red),
-                      child: Text('Message')),
+              ]),
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: ListTile(
+                  trailing: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.more_vert,
+                        size: 25,
+                      ),
+                    ],
+                  ),
+                  title: Text(
+                    'Donor Name',
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
+                  subtitle: Column(
+                    children: [
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Row(
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Blood Group',
+                                style: TextStyle(fontSize: 14),
+                              ),
+                              Text(
+                                'AB+',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                    color: Colors.red),
+                              )
+                            ],
+                          ),
+                          SizedBox(
+                            width: 30,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('Contact'),
+                              Text(
+                                '41561423454',
+                                style: TextStyle(
+                                    fontSize: 16, color: Colors.black),
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Address',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                ),
+                              ),
+                              Text(
+                                'Lorem Ipsum is simply dummy text',
+                                style: TextStyle(
+                                    fontSize: 16, color: Colors.black),
+                              ),
+                            ],
+                          )
+                        ],
+                      )
+                    ],
+                  ),
                 ),
-              ],
+              ),
             ),
           ),
         ],

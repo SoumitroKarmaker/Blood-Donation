@@ -16,6 +16,7 @@ class Register extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                SizedBox(height: 130,),
                 Text(
                   'Blood Donate',
                   style: TextStyle(
@@ -65,13 +66,14 @@ class Register extends StatelessWidget {
                       style:
                           ElevatedButton.styleFrom(backgroundColor: Colors.red),
                       onPressed: () {
-                        Navigator.of(context).push(MaterialPageRoute(builder: (context) => Home()));
+                        // Navigator.of(context).push(MaterialPageRoute(builder: (context) => Home()),);
+                        Home().launch(context,isNewTask: true);
                       },
                       child: Text(
                         'Register',
                         style: TextStyle(fontSize: 16),
-                      ),
-                    )),
+                      )),
+                    ),
               ],
             ),
           ),

@@ -25,6 +25,7 @@ class _SignInState extends State<SignIn> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  SizedBox(height: 150,),
                   Text(
                     'Welcome',
                     style: (TextStyle(

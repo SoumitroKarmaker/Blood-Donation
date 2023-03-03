@@ -24,6 +24,7 @@ class _SignUpState extends State<SignUp> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                SizedBox(height: 100,),
                 Text(
                   'Sign Up',
                   style: TextStyle(

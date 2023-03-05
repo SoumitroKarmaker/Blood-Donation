@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 
 class call_listtile extends StatelessWidget {
-   call_listtile({
+  call_listtile({
     super.key,
     required this.donorName,
+    required this.onPresscall,
+    required this.onpressmessage,
   });
   final String donorName;
+  final onPresscall;
+  final onpressmessage;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -16,7 +20,7 @@ class call_listtile extends StatelessWidget {
           children: [
             Expanded(
               child: ElevatedButton(
-                  onPressed: (){},
+                  onPressed: onPresscall,
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.red,
                   ),
@@ -25,14 +29,10 @@ class call_listtile extends StatelessWidget {
             SizedBox(
               width: 20,
             ),
-
             Expanded(
               child: ElevatedButton(
-                  onPressed: () {
-                    print('message preshed');
-                  },
-                  style:
-                  ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                  onPressed: onpressmessage,
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
                   child: Text('Message')),
             ),
           ],

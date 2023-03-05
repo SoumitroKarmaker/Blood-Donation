@@ -79,10 +79,10 @@ class Home extends StatelessWidget {
                       ),
                     ),
                     GestureDetector(
-                      onTap: () {
-                        Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => ReqForDonation()));
-                      },
+                      // onTap: () {
+                      //   Navigator.of(context).push(MaterialPageRoute(
+                      //       builder: (context) => ReqForDonation(null)));
+                      // },
                       child: Container(
                         decoration: BoxDecoration(
                           color: Colors.white,
